@@ -291,4 +291,4 @@ async def addrole(ctx, role: discord.Role):
 
     await ctx.send("Role assignment complete!")
 
-bot.run("MTI2OTM1NzQ4OTMzODcxMjE4NA.GFmchP.55-D6vBYoxarLsjzTYLb46PoAFKv8Iw7fQttrg")
+bot.run("")
