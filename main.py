@@ -127,6 +127,14 @@ async def members(interaction: discord.Interaction):
     else:
         await interaction.response.send_message('This command can only be used in a server.')
 
+@bot.tree.command(name="membercount", description="Shows the member count of the server")
+async def membercount(interaction: discord.Interaction):
+    guild = interaction.guild
+    if guild:
+        await interaction.response.send_message(f'This server has {guild.member_count} members!')
+    else:
+        await interaction.response.send_message('This command can only be used in a server.')
+
 @bot.tree.command(name="group", description="Sends RSS Group link to you")
 async def group(interaction: discord.Interaction):
  await interaction.response.send_message("https://www.roblox.com/groups/12662534/RSS-Riverside-Secondary#!/about")
